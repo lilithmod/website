@@ -1,0 +1,46 @@
+.button {
+    border-radius: .875rem;
+    background: transparent;
+    background-color: #EF2D5B;
+    border: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button > svg {
+    margin-right: .3125rem;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.small {
+    min-width: 8.75rem;
+    min-height: 2.5rem;
+    font-size: 1rem;
+}
+
+.medium {
+    min-width: 9.375rem;
+    min-height: 2.875rem;
+    font-size: 1rem;
+}
+
+.large {
+    min-width: 10.625rem;
+    min-height: 3.25rem;
+    font-size: 1.125rem;
+}
+
+.button:hover {
+    background-color: #ff3d6b;
+    cursor: pointer;
+}

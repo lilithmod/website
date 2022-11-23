@@ -1,0 +1,92 @@
+.horizontal + div, .content + div {
+    margin-top: 2.5rem;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.horizontal > * {
+    margin: 0 2rem;
+}
+
+.horizontal > *:first-child {
+    margin-left: 0;
+}
+
+.horizontal > *:last-child {
+    margin-right: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 25%;
+    margin: 0;
+}
+
+.content + .content {
+    align-items: flex-end;
+}
+
+.content > h1 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.content > p {
+    font-size: 1.125rem;
+    color: #A8A6A6;
+    max-width: 43.75rem;
+}
+
+.content > h3 {
+    font-size: 1.5rem;
+    color: #A8A6A6;
+    font-weight: 400;
+    margin: 1rem 0;
+    max-width: 29.375rem;
+}
+
+.content > h3 > strong {
+    font-weight: 700;
+    color: white;
+}
+
+.content > span {
+    font-size: 1rem;
+    color: #525252;
+}
+
+@media only screen and (max-width: 900px) {
+    .horizontal, .content {
+        flex-wrap: wrap;
+    }
+
+    .horizontal {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .horizontal > * {
+        margin: .5rem 0;
+    }
+
+    .horizontal > *:first-child {
+        margin-top: 1rem;
+    }
+    
+    .horizontal > *:last-child {
+        margin-bottom: 1rem;
+    }
+
+    .cardContainer {
+        margin: 0;
+    }
+}

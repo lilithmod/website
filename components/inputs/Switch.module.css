@@ -1,0 +1,83 @@
+.switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EF2D5B;
+    border-radius: .875rem;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.switch input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.switch label {
+    border-radius: .875rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+    transition: color 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-width: 9.375rem;
+    min-height: 2.875rem;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.switch label:hover {
+    cursor: pointer;
+}
+
+.container span {
+    position: absolute;
+    display: inline-block;
+    min-width: 9.625rem;
+    min-height: 2.875rem;
+    background-color: white;
+    border-radius: .875rem;
+    pointer-events: none;
+}
+
+.switch label::before {
+    content: "";
+    position: absolute;
+    left: -0.0625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: .125rem;
+    background-color: white;
+}
+
+.switch label:first-of-type::before {
+    content: none;
+}
+
+.switch input:checked + label {
+    color: #EF2D5B;
+}
+
+@media only screen and (max-width: 900px) {
+    .switch label {
+        min-width: 5.625rem;
+        min-height: 2.875rem;
+    }
+
+    .container span {
+        min-width: 5.875rem;
+        min-height: 2.875rem;
+    }
+}

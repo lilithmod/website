@@ -1,0 +1,79 @@
+/* Prepare to witness what css is today */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F3031;
+    border-radius: .875rem;
+    padding: 0;
+    min-width: 12.5rem;
+    width: 100%;
+    max-width: 50rem;
+}
+
+.container label {
+    width: 100%;
+}
+
+.container li {
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    border-bottom: 1px solid #353637;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container li:last-child {
+    border-bottom: 0;
+    border-radius: .875rem;
+}
+
+.container li p {
+    transition: 0.3s;
+    padding: 0;
+    font-weight: 400;
+    background-color: #353637;
+    width: 100%;
+    padding: 0;
+    min-height: 0;
+    max-height: 0;
+    box-sizing: border-box;
+    padding-left:  1.25rem;
+    padding-right:  1.25rem;
+}
+
+.container li input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container li h4 {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.container li input:checked ~ p {
+    min-height: 1.25rem;
+    max-height: 6.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container h4::after {
+    content: "+";
+    position: absolute;
+    right: 1rem;
+    font-weight: 300;
+}
+
+.container li input:checked + label h4::after {
+    content: "-";
+}

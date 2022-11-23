@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EF2D5B;
+    border-radius: .875rem;
+}
+
+.container button, .container a {
+    position: relative;
+    border-radius: .875rem;
+    background-color: transparent;
+}
+
+.container button::before, .container a::before {
+    content: "";
+    position: absolute;
+    left: -0.0625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: .125rem;
+    background-color: white;
+}
+
+.container button:first-child::before, .container a:first-child::before {
+    content: none;
+}
