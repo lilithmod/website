@@ -25,10 +25,10 @@ const PricingCard = (props: PricingCardProps & { secondary: boolean }) => {
 
     return (
         <div className={`${styles.card} ${props.recommended ? styles.recommended : ""}`}>
-            <h3>{props.tier}</h3>
-            <h2>
+            <h2>{props.tier}</h2>
+            <h3>
                 {formatPrice(props.secondary ? props.secondaryPrice : props.price)}
-            </h2>
+            </h3>
             <div dangerouslySetInnerHTML={{ __html: props.content.join("") }}></div>
             <div className={styles.buttonContainer}>
                 <Button link={props.link}>{props.buttonText}</Button>
@@ -62,7 +62,7 @@ export default function Pricing(props: PricingProps) {
                         <h1>Pricing</h1>
                         <Switch clicked={monthly} handleClick={setMonthly} name="pricing-switch" items={props.switch} />
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.</p>
+                    <p>Support the ongoing development of Lilith while getting exclusive perks and features.</p>
                 </div>
                 <div className={`${containers.horizontal} ${styles.cardContainer}`}>
                     {props.cards.map((element, key) => {

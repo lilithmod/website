@@ -83,7 +83,7 @@ const config: TypeConfig = {
         },
         pricing: {
             paragraph: "Lilith is free to use, but if you want to support us as well as get more features, you can subscribe to one of our plans below.",
-            switch: ["1 Month", "6 Months"],
+            switch: ["Patreon", "Crypto"],
             cards: [
                 {
                     buttonText: "Get",
@@ -92,45 +92,42 @@ const config: TypeConfig = {
                     price: "Free",
                     secondaryPrice: "Free",
                     content: [
-                        "<p>This tier has the following features:</p>",
                         "<ul>",
-                        "<li>Lorem ipsum dolor sit amet</li>",
-                        "<li>consectetur adipiscing elit Phasellus imperdiet</li>",
-                        "<li>metus et pellentesque scelerisque, felis</li>",
-                        "<li>erat facilisis sapien, ut lobortis mi dolor at leo</li>",
+                        "<li>Basic Queuestats</li>",
+                        "<li>Basic Autododge</li>",
+                        "<li>Easily Requeue Games</li>",
+                        "<li>Easily Requeue Games</li>",
                         "</ul>"
                     ],
                 },
                 {
                     buttonText: "Subscribe",
-                    link: "/pricing",
-                    tier: "Premium Tier",
+                    link: "https://patreon.com/lilithmod",
+                    tier: "Pro",
                     price: "$5/mo",
-                    secondaryPrice: "$3/mo",
+                    secondaryPrice: "$6/mo",
                     recommended: true,
                     content: [
-                        "<p>This tier has the following features:</p>",
                         "<ul>",
-                        "<li>Lorem ipsum dolor sit amet</li>",
-                        "<li>consectetur adipiscing elit Phasellus imperdiet</li>",
-                        "<li>metus et pellentesque scelerisque, felis</li>",
-                        "<li>erat facilisis sapien, ut lobortis mi dolor at leo</li>",
+                        "<li>Requeue After Dodging</li>",
+                        "<li>Dodge Player Names</li>",
+                        "<li>Dodge Maps</li>",
+                        "<li>Javascript Conditions</li>",
+                        "<li>Custom Player Tags</li>",
+                        "<li>Private Builds of Lilith</li>",
                         "</ul>"
                     ],
                 },
                 {
                     buttonText: "Subscribe",
-                    link: "/pricing",
-                    tier: "Pro Tier",
+                    link: "https://patreon.com/lilithmod",
+                    tier: "Pro + Rank",
                     price: "$20/mo",
-                    secondaryPrice: "$15/mo",
+                    secondaryPrice: "$22/mo",
                     content: [
-                        "<p>This tier has the following features:</p>",
                         "<ul>",
-                        "<li>Lorem ipsum dolor sit amet</li>",
-                        "<li>consectetur adipiscing elit Phasellus imperdiet</li>",
-                        "<li>metus et pellentesque scelerisque, felis</li>",
-                        "<li>erat facilisis sapien, ut lobortis mi dolor at leo</li>",
+                        "<li>Everything in Lilith Pro</li>",
+                        "<li>Customizable Ingame Rank</li>",
                         "</ul>"
                     ],
                 }
