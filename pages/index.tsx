@@ -1,10 +1,10 @@
-import Image from "next/image";
-import { GetStaticProps } from "next/types";
-import { useEffect, useState } from "react";
-import Button from "../components/inputs/Button";
-import ButtonGroup from "../components/inputs/ButtonGroup";
-import config from "../config";
-import styles from "../styles/Home.module.css";
+import Image from 'next/image'
+import { GetStaticProps } from 'next/types'
+import { useEffect, useState } from 'react'
+import Button from '../components/inputs/Button'
+import ButtonGroup from '../components/inputs/ButtonGroup'
+import config from '../config'
+import styles from '../styles/Home.module.css'
 
 export interface HomeProps {
     sections: [
@@ -31,8 +31,8 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
         props: {
             ...config.pages.home
         },
-    };
-};
+    }
+}
 
 export default function Home(props: HomeProps) {
 
@@ -82,7 +82,7 @@ export default function Home(props: HomeProps) {
 
             <section className={`vertical ${styles.second}`}>
                 {props.sections[1].images.map((image, index) => (
-                    <div key={index} className={`${index % 2 == 0 ? styles.invert : ""}`}>
+                    <div key={index} className={`${index % 2 == 0 ? styles.invert : ''}`}>
                         <Image src={image.path} alt={image.title} width={620} height={350} />
                         <div>
                             <h2>{image.title}</h2>
@@ -101,5 +101,5 @@ export default function Home(props: HomeProps) {
                 </ButtonGroup>
             </section>
         </>
-    );
+    )
 }

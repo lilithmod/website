@@ -1,44 +1,35 @@
-import TypeConfig from "./types/config";
+import TypeConfig from './types/config'
 
 const config: TypeConfig = {
     footer: {
         columns: [
             {
-                title: "Documentation",
+                title: 'Installation',
                 links: [
                     {
-                        text: "Getting Started",
-                        href: "/docs/getting-started",
+                        text: 'Windows',
+                        href: 'https://docs.lilith.rip/lilith/install/windows',
                     },
                     {
-                        text: "API Reference",
-                        href: "/docs/api-reference",
+                        text: 'macOS',
+                        href: 'https://docs.lilith.rip/lilith/install/macos',
+                    },
+                    {
+                        text: 'Linux',
+                        href: 'https://docs.lilith.rip/lilith/install/linux',
+                    },
+                    {
+                        text: 'Getting Started',
+                        href: 'https://docs.lilith.rip/lilith/using-lilith',
                     },
                 ],
             },
             {
-                title: "Documentation",
+                title: 'Support',
                 links: [
                     {
-                        text: "Getting Started",
-                        href: "/docs/getting-started",
-                    },
-                    {
-                        text: "API Reference",
-                        href: "/docs/api-reference",
-                    },
-                ],
-            },
-            {
-                title: "Documentation",
-                links: [
-                    {
-                        text: "Getting Started",
-                        href: "/docs/getting-started",
-                    },
-                    {
-                        text: "API Reference",
-                        href: "/docs/api-reference",
+                        text: 'Discord',
+                        href: 'https://discord.gg/lilith',
                     },
                 ],
             }
@@ -48,114 +39,121 @@ const config: TypeConfig = {
         home: {
             sections: [
                 {
-                    paragraph: "The days of searching are over.",
-                    title: "Your all in one\nHypixel Proxy",
+                    paragraph: '',
+                    title: 'Your all-in-one\nHypixel Proxy',
                 },
                 {
                     images: [
                         {
-                            path: "/images/home/1.jpg",
-                            title: "Autododge",
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.",
+                            path: '/images/home/1.jpg',
+                            title: 'Autododge',
+                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.',
                         },
                         {
-                            path: "/images/home/1.jpg",
-                            title: "Staff mods",
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.",
+                            path: '/images/home/1.jpg',
+                            title: 'Staff mods',
+                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.',
                         },
                         {
-                            path: "/images/home/1.jpg",
-                            title: "Image 3",
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.",
+                            path: '/images/home/1.jpg',
+                            title: 'Image 3',
+                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.',
                         }
                     ]
                 },
                 {
-                    catchphrase: "So what are you waiting for?",
-                    title: "Get Lilith today!"
+                    catchphrase: 'So what are you waiting for?',
+                    title: 'Get Lilith today!'
                 }
             ]
         },
         download: {
-            paragraph: "You have chosen %{} as your platform. If this is incorrect, please select the correct platform from the buttons above.",
-            downloadGuide: "https://docs.lilith.rip/lilith/install/%{}",
-            downloadLink: "/download?%{}",
+            paragraph: 'You want Lilith for <strong>%{}</strong>, right?<br/><br/>If this is incorrect, please select the correct platform from the buttons above.',
+            downloadGuide: 'https://docs.lilith.rip/lilith/install/%{}',
+            downloadLink: 'https://api.lilith.rip/launcher/%{}',
         },
         pricing: {
-            paragraph: "Lilith is free to use, but if you want to support us as well as get more features, you can subscribe to one of our plans below.",
-            switch: ["Patreon", "Crypto"],
+            paragraph: 'Lilith is free to use, but if you want to support us as well as get more features, you can subscribe to one of our plans below.',
+            switch: ['Patreon', 'Crypto'],
             cards: [
                 {
-                    buttonText: "Get",
-                    link: "/pricing",
-                    tier: "Free Tier",
-                    price: "Free",
-                    secondaryPrice: "Free",
+                    buttonText: 'Get',
+                    secondaryButtonText: 'Get',
+                    link: '/pricing',
+                    tier: 'Free Trial',
+                    price: 'Free',
+                    secondaryPrice: 'Free',
                     content: [
-                        "<ul>",
-                        "<li>Basic Queuestats</li>",
-                        "<li>Basic Autododge</li>",
-                        "<li>Easily Requeue Games</li>",
-                        "<li>Easily Requeue Games</li>",
-                        "</ul>"
+                        '<ul>',
+                        '<li>Basic Queuestats</li>',
+                        '<li>Basic Autododge</li>',
+                        '<li>Easily Requeue Games</li>',
+                        '<li>Easily Requeue Games</li>',
+                        '</ul>'
                     ],
                 },
                 {
-                    buttonText: "Subscribe",
-                    link: "https://patreon.com/lilithmod",
-                    tier: "Pro",
-                    price: "$5/mo",
-                    secondaryPrice: "$6/mo",
+                    buttonText: 'Subscribe',
+                    secondaryButtonText: 'Coming Soon',
+                    link: 'https://patreon.com/lilithmod',
+                    tier: 'Pro',
+                    price: '$5/mo',
+                    secondaryPrice: '$6/mo',
                     recommended: true,
                     content: [
-                        "<ul>",
-                        "<li>Requeue After Dodging</li>",
-                        "<li>Dodge Player Names</li>",
-                        "<li>Dodge Maps</li>",
-                        "<li>Javascript Conditions</li>",
-                        "<li>Custom Player Tags</li>",
-                        "<li>Private Builds of Lilith</li>",
-                        "</ul>"
+                        '<ul>',
+                        '<li>Requeue After Dodging</li>',
+                        '<li>Dodge Player Names</li>',
+                        '<li>Dodge Maps</li>',
+                        '<li>Javascript Conditions</li>',
+                        '<li>Custom Player Tags</li>',
+                        '<li>Private Builds of Lilith</li>',
+                        '</ul>'
                     ],
                 },
                 {
-                    buttonText: "Subscribe",
-                    link: "https://patreon.com/lilithmod",
-                    tier: "Pro + Rank",
-                    price: "$20/mo",
-                    secondaryPrice: "$22/mo",
+                    buttonText: 'Subscribe',
+                    secondaryButtonText: 'Coming Soon',
+                    link: 'https://patreon.com/lilithmod',
+                    tier: 'Pro + Rank',
+                    price: '$20/mo',
+                    secondaryPrice: '$22/mo',
                     content: [
-                        "<ul>",
-                        "<li>Everything in Lilith Pro</li>",
-                        "<li>Customizable Ingame Rank</li>",
-                        "</ul>"
+                        '<ul>',
+                        '<li>Everything in Lilith Pro</li>',
+                        '<li>Customizable Ingame Rank</li>',
+                        '</ul>'
                     ],
                 }
             ]
         },
         about: {
-            header: "About us",
-            content: ["Lorem ipsum <strong>dolores</strong>"]
+            header: 'About us',
+            content: ['Lilith is a small company focused on making quality software. We attempt to create the best-in-class option for all Hypixel utility needs.']
         },
         faq: {
-            header: "Frequently Asked Questions",
-            content: ["<strong>Lorem</strong> Ipsum"],
+            header: 'Frequent Questions',
+            content: ['Get answers to more questions on our <a href=\'https://discord.gg/lilith\'>Discord</a>.'],
             accordions: [
                 {
-                    header: "Do you have a free tier?",
-                    content: ["Lorem ipsum <strong>dolor sit</strong>, amet consectetur adipisicing elit. Ea accusamus ab at voluptatum? Enim, delectus porro similique natus sapiente eveniet id. Delectus similique ab nihil ipsum laboriosam veniam voluptas veritatis."                ]
+                    header: 'Do you have a free tier?',
+                    content: [
+                        'Yes, we offer a free tier that includes basic features such as autododge and queuestats. You can find more information about our free tier <a href=\'/pricing\'>here</a>.'
+                    ]
                 },
                 {
-                    header: "Do you have a free tier?",
-                    content: ["Yes."]
+                    header: 'Why do I need to log in with Discord?',
+                    content: [
+                        'Lilith links to your Discord account to verify that you have access to Lilith, and whether or not you have premium perks.'
+                    ]
                 },
                 {
-                    header: "Do you have a free tier?",
-                    content: ["Yes."]
+                    header: 'How do I apply?',
+                    content: ['Apply for access to Lilith by joining our <a href=\'https://discord.gg/lilith\'>Discord</a> server.']
                 },
             ]
         }
     }
-};
+}
 
-export default config;
+export default config

@@ -1,7 +1,7 @@
-import styles from "../styles/FAQ.module.css";
-import containers from "../styles/Containers.module.css";
-import { GetStaticProps } from "next";
-import config from "../config";
+import styles from '../styles/FAQ.module.css'
+import containers from '../styles/Containers.module.css'
+import { GetStaticProps } from 'next'
+import config from '../config'
 
 export interface FAQProps {
     header: string,
@@ -17,15 +17,15 @@ export const getStaticProps: GetStaticProps<FAQProps> = async () => {
         props: {
             ...config.pages.faq
         }
-    };
-};
+    }
+}
 
 export default function FAQ(props: FAQProps) {
     return (
         <section>
             <div className={containers.content}>
                 <h1>{props.header}</h1>
-                <p dangerouslySetInnerHTML={{ __html: props.content.join("") }}></p>
+                <p dangerouslySetInnerHTML={{ __html: props.content.join('') }}></p>
                 <ul className={styles.container}>
                     {props.accordions.map((entry, key) => (
                         <li key={key}>
@@ -33,11 +33,11 @@ export default function FAQ(props: FAQProps) {
                             <label htmlFor={`accordion-${key}`}>
                                 <h4>{entry.header}</h4>
                             </label>
-                            <p dangerouslySetInnerHTML={{ __html: entry.content.join("") }}></p>
+                            <p dangerouslySetInnerHTML={{ __html: entry.content.join('') }}></p>
                         </li>
                     ))}
                 </ul>
             </div>
         </section>
-    );
+    )
 }

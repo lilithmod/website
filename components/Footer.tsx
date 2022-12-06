@@ -1,7 +1,7 @@
-import { GetStaticProps, InferGetStaticPropsType } from "next/types";
-import Link from "next/link";
-import config from "../config";
-import styles from "./Footer.module.css";
+import { GetStaticProps, InferGetStaticPropsType } from 'next/types'
+import Link from 'next/link'
+import config from '../config'
+import styles from './Footer.module.css'
 
 export interface FooterProps {
     columns: {
@@ -14,7 +14,7 @@ export interface FooterProps {
 }
 
 export default function Footer() {
-    const columns = config.footer.columns;
+    const columns = config.footer.columns
     return (
         <footer className={styles.footer}>
             {columns.map((column, i) => (
@@ -30,5 +30,5 @@ export default function Footer() {
                 </div>
             ))}
         </footer>
-    );
+    )
 }

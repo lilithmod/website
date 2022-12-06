@@ -1,27 +1,33 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./Navbar.module.css";
+import Image from 'next/image'
+import Link from 'next/link'
+import styles from './Navbar.module.css'
 
 export default function Navbar() {
     return (
         <nav className={styles.navbar}>
-            <Link prefetch={false} href={"/"}>
-                <Image src="/images/lilith-text.png" alt="Logo" width={135} height={48} />
+            <Link prefetch={false} href={'/'}>
+                <Image src="/images/lilith-text.png" alt="Logo" width={202.5} height={72} />
             </Link>
             <ul className={styles.list}>
                 <li>
-                    <Link prefetch={false} href={"/about"}>About</Link>
+                    <Link href={'/about'}>About</Link>
                 </li>
                 <li>
-                    <Link prefetch={false} href={"/pricing"}>Pricing</Link>
+                    <Link href={'/pricing'}>Pricing</Link>
                 </li>
                 <li>
-                    <Link prefetch={false} href={"/faq"}>FAQ</Link>
+                    <Link href={'/faq'}>FAQ</Link>
                 </li>
                 <li>
-                    <Link prefetch={false} className={styles.download} href={"/download"}>Download</Link>
+                    <Link href={'https://docs.lilith.rip'}>Documentation</Link>
+                </li>
+                <li>
+                    <Link href={'https://discord.gg/lilith'}>Discord</Link>
+                </li>
+                <li>
+                    <Link className={styles.download} href={'/download'}>Download</Link>
                 </li>
             </ul>
         </nav>
-    );
+    )
 }

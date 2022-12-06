@@ -51,16 +51,16 @@
     pointer-events: none;
 }
 
-.switch label::before {
-    content: "";
-    position: absolute;
-    left: -0.0625rem;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 50%;
-    width: .125rem;
-    background-color: white;
-}
+/*.switch label::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    left: -0.0625rem;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    height: 50%;*/
+/*    width: .125rem;*/
+/*    background-color: white;*/
+/*}*/
 
 .switch label:first-of-type::before {
     content: none;
