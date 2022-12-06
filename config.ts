@@ -79,7 +79,7 @@ const config: TypeConfig = {
                 {
                     buttonText: 'Get',
                     secondaryButtonText: 'Get',
-                    link: '/pricing',
+                    link: '/download',
                     tier: 'Free Trial',
                     price: 'Free',
                     secondaryPrice: 'Free',
