@@ -34,6 +34,20 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
     }
 }
 
+function getDivs(amount: number) {
+    const divs = []
+    for (let i = 0; i < amount; i++) {
+        divs.push(<div key={i} style={{
+            // styles the div with a random height between 250 and 500px
+            width: '250px',
+            height: `${Math.floor(Math.random() * 250) + 250}px`,
+            backgroundColor: 'orange',
+            margin: '10px'
+        }}>{i + 1}</div>)
+    }
+    return divs
+}
+
 export default function Home(props: HomeProps) {
 
     return (

@@ -45,7 +45,9 @@ a.button {
     font-size: 1.125rem;
 }
 
-.button:hover {
+.button:hover:not(.disabled) {
     background-color: #ff3d6b;
     cursor: pointer;
 }
+
+
