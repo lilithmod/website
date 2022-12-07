@@ -63,6 +63,27 @@
     color: #525252;
 }
 
+.content.centered h3 {
+    font-size: 1.75rem;
+    margin: 0;
+    margin-bottom: -10px;
+    font-weight: 600;
+}
+
+.content.centered h1 {
+    line-height: 90%;
+}
+
+.content.centered p {
+    margin-bottom: 1rem;
+}
+
+.centered {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 900px) {
     .horizontal, .content {
         flex-wrap: wrap;

@@ -152,7 +152,15 @@ const config: TypeConfig = {
                     content: ['Apply for access to Lilith by joining our <a href=\'https://discord.gg/lilith\'>Discord</a> server.']
                 },
             ]
-        }
+        },
+        custom: [
+            {
+                route: 'success',
+                displayStatusCode: true,
+                header: 'Success',
+                content: ['Successfully {paragraph} lol']
+            }
+        ]
     }
 }
 
