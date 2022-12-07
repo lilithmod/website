@@ -100,7 +100,7 @@ export default function Home(props: HomeProps) {
                         <Image src={image.path} alt={image.title} width={620} height={350} />
                         <div>
                             <h2>{image.title}</h2>
-                            <p>{image.description}</p>
+                            <p dangerouslySetInnerHTML={{ __html: image.description }}></p>
                         </div>
                     </div>
                 ))}

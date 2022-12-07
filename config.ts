@@ -45,19 +45,19 @@ const config: TypeConfig = {
                 {
                     images: [
                         {
-                            path: '/images/home/1.jpg',
+                            path: '/images/home/1.png',
+                            title: 'Queuestats',
+                            description: 'Lilith offers informative queuestats for a variety of gamemodes, in the game itself, supporting any client. <br/><br/>No external windows.<br/> No manual /who. <br/>Simple stats in the tablist and in chat.',
+                        },
+                        {
+                            path: '/images/home/2.png',
                             title: 'Autododge',
-                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.',
+                            description: 'The most comprehensive free autododge available for Hypixel. Dodge based on numerous conditions, all for free, and gain access to even more customizability and automatic requeueing with a Pro subscription.',
                         },
                         {
-                            path: '/images/home/1.jpg',
-                            title: 'Staff mods',
-                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.',
-                        },
-                        {
-                            path: '/images/home/1.jpg',
-                            title: 'Image 3',
-                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus egestas varius vel tincidunt senectus eget quisque vitae in. Risus malesuada purus vel dignissim eget et, lacus. Lectus viverra tortor, amet egestas. Ligula imperdiet parturient sit et, at proin. Purus sed.',
+                            path: '/images/home/3.png',
+                            title: 'Custom Rank',
+                            description: 'Purchase a 100% custom rank tag for your Minecraft account that\'s visible to all Lilith users. Available right now on our Patreon.',
                         }
                     ]
                 },
