@@ -155,10 +155,47 @@ const config: TypeConfig = {
         },
         custom: [
             {
-                route: 'success',
-                displayStatusCode: true,
-                header: 'Success',
-                content: ['Successfully {paragraph} lol']
+                route: 'verified',
+                displayStatusCode: false,
+                header: 'Success!',
+                content: [
+                    'Lilith on this device is now linked to <a href="https://discord.com/users/{id}">{discord}</a>, and will continue starting up in a few seconds.',
+                    '<br/>Consider checking out the documentation below to see the features:'
+                ],
+                buttonText: 'Documentation',
+                buttonLink: 'https://docs.lilith.rip/lilith/using-lilith',
+            },
+            {
+                route: 'unlicensed',
+                displayStatusCode: false,
+                header: 'Oops!',
+                content: [
+                    'Lilith is currently unavailable for unlicensed users. To apply for a license (it\'s quick and easy, not to mention free), check out our Discord below and find the <strong>#apply-here</strong> channel.'
+                ],
+                buttonText: 'Discord',
+                buttonLink: 'https://discord.gg/lilith',
+            },
+            {
+                route: 'maxreached',
+                displayStatusCode: false,
+                header: 'Hey there!',
+                content: [
+                    'You\'ve reached the maximum amount of devices you\'re allowed to use Lilith on. Don\'t worry, a staff member can assist you in <strong>#support</strong> or a ticket in the Discord below:',
+                ],
+                buttonText: 'Discord',
+                buttonLink: 'https://discord.gg/lilith',
+            },
+            {
+                route: 'failure',
+                displayStatusCode: false,
+                header: 'Uh oh...',
+                content: [
+                    'Something went wrong, and it\'s definitely our fault, not yours.',
+                    'Technical reason for staff: <strong>{reason}</strong>',
+                    '<br/>Please let us know about this in <strong>#support</strong> or a ticket in the Discord below:',
+                ],
+                buttonText: 'Discord',
+                buttonLink: 'https://discord.gg/lilith',
             }
         ]
     }

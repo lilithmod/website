@@ -3,12 +3,16 @@ import Button from '../components/inputs/Button'
 import config from '../config'
 import containers from '../styles/Containers.module.css'
 
+import { useRouter } from 'next/router'
+
 export interface CustomPageProps {
     route: string,
     displayStatusCode?: boolean,
     statusCode?: number,
     header: string,
-    content: string[]
+    content: string[],
+    buttonText?: string,
+    buttonLink?: string
 }
 
 export async function getStaticPaths() {
@@ -34,31 +38,30 @@ export async function getStaticProps({ params }: { params: { custom: string } })
 export default function CustomPage(props: CustomPageProps) {
     const [content, setContent] = useState('')
 
+    const router = useRouter()
+
     useEffect(() => {
-        const parseURLQuery = (url: string): { [key: string]: string } => {
-            const query = url.split('?')[1]
-            if (!query) return {}
-            const queryObject: { [key: string]: string } = {}
-            query.split('&').forEach(query => {
-                const [key, value] = query.split('=')
-                queryObject[key] = value
-            })
-            return queryObject
-        }
+
+        let tempContent = props.content.join('<br/>')
+        const params = new URLSearchParams(router.asPath.split('?')[1])
+
+        const obj: any = JSON.parse(Buffer.from(params.get('d') ?? 'e30=', 'base64').toString() ?? '{}')
+
+        Object.keys(obj).forEach((key) => {
+            tempContent = tempContent.replace(`{${key}}`, obj[key])
+        })
     
-        setContent(props.content.join('<br>').replace(/{.+}/, (match) => {
-            const query = parseURLQuery(location.href)[match.slice(1, -1)]
-            return query || match
-        }))
-    }, [props.content])
+        setContent(tempContent)
+
+    }, [props.content, router.asPath])
 
     return (
         <section>
             <div className={`${containers.content} ${containers.centered}`}>
                 {props.displayStatusCode && props.statusCode && <h3 className={containers.subheader}>{props.statusCode}</h3>}
                 <h1>{props.header}</h1>
-                <p style={{ fontSize: '1.25rem', color: 'white' }} dangerouslySetInnerHTML={{__html: content }}></p>
-                <Button link="/">Go Home</Button>
+                <p style={{ fontSize: '1.25rem', color: 'white', marginTop: '0.5em', paddingBottom: '0.5em' }} dangerouslySetInnerHTML={{__html: content }}></p>
+                <Button link={props.buttonLink ?? '/'}>{props.buttonText ?? 'Go Home'}</Button>
             </div>
         </section>
     )
