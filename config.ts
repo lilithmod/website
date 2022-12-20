@@ -80,14 +80,13 @@ const config: TypeConfig = {
                     buttonText: 'Get',
                     secondaryButtonText: 'Get',
                     link: '/download',
-                    tier: 'Free Trial',
+                    tier: 'Free',
                     price: 'Free',
                     secondaryPrice: 'Free',
                     content: [
                         '<ul>',
                         '<li>Basic Queuestats</li>',
                         '<li>Basic Autododge</li>',
-                        '<li>Easily Requeue Games</li>',
                         '<li>Easily Requeue Games</li>',
                         '</ul>'
                     ],
@@ -107,7 +106,8 @@ const config: TypeConfig = {
                         '<li>Dodge Maps</li>',
                         '<li>Javascript Conditions</li>',
                         '<li>Custom Player Tags</li>',
-                        '<li>Private Builds of Lilith</li>',
+                        '<li>Streamer Mode</li>',
+                        '<li>Early Access to Lilith Betas</li>',
                         '</ul>'
                     ],
                 },
