@@ -89,4 +89,8 @@ a.download:hover {
     a.download {
         display: none;
     }
+    
+    .mobile_hide {
+        display: none;
+    }
 }
