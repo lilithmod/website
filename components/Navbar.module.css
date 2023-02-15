@@ -90,7 +90,7 @@ a.download:hover {
         display: none;
     }
     
-    .mobile_hide {
+    a.mobile_hide {
         display: none;
     }
 }

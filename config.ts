@@ -37,10 +37,10 @@ const config: TypeConfig = {
     },
     pages: {
         document: {
-            title: "Lilith",
-            color: "#000",
-            url: "https://lilith.rip",
-            description: "Lilith - Hypixel Proxy",
+            title: 'Lilith',
+            color: '#000',
+            url: 'https://lilith.rip',
+            description: 'Lilith - Hypixel Proxy',
         },
         home: {
             sections: [

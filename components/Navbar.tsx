@@ -10,13 +10,13 @@ export default function Navbar() {
             </Link>
             <ul className={styles.list}>
                 <li>
-                    <Link href={'/about'}>About</Link>
+                    <Link className={styles.mobile_hide} href={'/about'}>About</Link>
                 </li>
                 <li>
                     <Link href={'/pricing'}>Pricing</Link>
                 </li>
                 <li>
-                    <Link href={'/faq'}>FAQ</Link>
+                    <Link className={styles.mobile_hide} href={'/faq'}>FAQ</Link>
                 </li>
                 <li>
                     <Link href={'https://docs.lilith.rip'}>Documentation</Link>
