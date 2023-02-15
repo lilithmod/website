@@ -11,6 +11,11 @@
     padding: 0px 4.375rem;
     box-sizing: border-box;
     z-index: 999;
+    pointer-events: none;
+}
+
+.navbar * {
+    pointer-events: all;
 }
 
 .navbar img {
@@ -59,6 +64,13 @@ a.download {
 a.download:hover {
     opacity: 1;
     background-color: #ff3d6b;
+}
+
+.navbar img {
+    width: 100%;
+    max-width: 10rem;
+    height: 100%;
+    margin: 0;
 }
 
 /** I hate responsiveness */
