@@ -40,13 +40,13 @@ const config: TypeConfig = {
             title: 'Lilith',
             color: '#000',
             url: 'https://lilith.rip',
-            description: 'Lilith - Hypixel Proxy',
+            description: 'Lilith - Minecraft Proxy',
         },
         home: {
             sections: [
                 {
                     paragraph: '',
-                    title: 'Your all-in-one\nHypixel Proxy',
+                    title: 'Your all-in-one\nMinecraft Proxy',
                 },
                 {
                     images: [
@@ -58,7 +58,7 @@ const config: TypeConfig = {
                         {
                             path: '/images/home/2.png',
                             title: 'Autododge',
-                            description: 'The most comprehensive free autododge available for Hypixel. Dodge based on numerous conditions, all for free, and gain access to even more customizability and automatic requeueing with a Pro subscription.',
+                            description: 'The most comprehensive free autododge available. Dodge based on numerous conditions, all for free, and gain access to even more customizability and automatic requeueing with a Pro subscription.',
                         },
                         {
                             path: '/images/home/3.png',
